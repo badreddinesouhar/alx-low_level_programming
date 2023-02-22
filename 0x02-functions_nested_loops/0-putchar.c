@@ -1,7 +1,22 @@
-#include <stdio.h>
+#include "main.h"
+
+/**
+ * main - entry point
+ * print a string
+ * return 0 (success)
+ * */
 
 int main(void)
 {
-	printf("%s\n", "_putchar");
+	int i;
+	char *str = "_putchar";
+	i = 0;
+
+	while (str[i])
+	{
+		putchar(1, str[i], 1);
+		i++;
+	}
 	return (0);
+
 }
